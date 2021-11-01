@@ -1,0 +1,23 @@
+{
+  "dataset" : "cifar10",
+  "nb_classes": 10,
+  "batch_size" : 512,
+  "epochs": 400,
+  "learning_rate" : 0.01,
+  "learning_rate_weights": 0.024,
+  "learning_rate_biases": 0.001,
+  "learning_rate_decay": 0.5,
+  "learning_rate_decay_interval": 20,
+  "weight_decay": 1e-4,
+  "weight_decay_filter": true,
+  "device": "cuda",
+  "optimizer": "adamw",
+  "input_size": 32,
+  "embedding_size": 128,
+  "model": "resnet18",
+  "data_parallel": false,
+  "evaluation_interval": 5,
+  "classifier": "KNN",
+  "neighbors" : 128,
+  "test_range": 0
+}
